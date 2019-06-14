@@ -1,4 +1,4 @@
-# Bamzaaien voor 2 personen. Beide personen krijgen 3 lucifers. Het doel van het spel is totale aantal lucifers te raden dat in het spel is. Elke speler kan 0-3 lucifers selecteren. Om beurten raden de spelers hoeveel er totaal in het spel zijn. Spelers moeten niet laten zien hoeveel lucifers ze in hun hand hebben. De winnende speler behoud zijn/haar lucifers, de verliezende speler verliest 1 lucifer.Het spel gaat door tot dat 1 speler al zijn lucifers kwijt is, die speler verliest het spel.
+# Bamzaaien voor 2 personen. Beide personen krijgen 3 lucifers. Het doel van het spel is totale aantal lucifers te raden dat in het spel is. Elke speler kan 0-3 lucifers selecteren. Om beurten raden de spelers hoeveel er totaal in het spel zijn. Spelers moeten niet laten zien hoeveel lucifers ze in hun hand hebben. De winnaar van een ronde verliest 1 van zijn/haar lucifers. Het spel gaat door tot dat 1 speler al zijn lucifers kwijt is, die speler wint het spel.
 
 def speel_bamzaaien():
     lucifers_speler_1 = 3
