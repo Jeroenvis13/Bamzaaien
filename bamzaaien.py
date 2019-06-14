@@ -3,10 +3,9 @@
 def speel_bamzaaien():
     lucifers_speler_1 = 3
     lucifers_speler_2 = 3
-    test = 5
 
     while lucifers_speler_1 != 0 and lucifers_speler_2 != 0:
-        winnaar = speel_ronde(lucifers_speler_1, lucifers_speler_2, test)
+        winnaar = speel_ronde(lucifers_speler_1, lucifers_speler_2)
         if winnaar == 1:
             lucifers_speler_1 = lucifers_speler_1 - 1
         elif winnaar == 2:
@@ -18,7 +17,8 @@ def speel_bamzaaien():
     else:
         print("Speler 2 heeft gewonnen!")
 
-def speel_ronde(lucifers_speler_1, lucifers_speler_2, test):
+
+def speel_ronde(lucifers_speler_1, lucifers_speler_2):
     aantal_gepakte_lucifers_1 = int(input("Speler 1 mag nu een aantal lucifers aangeven om in te zetten:"))
 
     while aantal_gepakte_lucifers_1 > lucifers_speler_1:
