@@ -1,0 +1,89 @@
+#Bamzaaien voor 2 personen. Beide personen krijgen 3 lucifers. Het doel van het spel is totale aantal lucifers te raden dat in het spel is. Elke speler kan 0-3 lucifers selecteren. Om beurten raden de spelers hoeveel er totaal in het spel zijn. Spelers moeten niet laten zien hoeveel lucifers ze in hun hand hebben. De winnende speler behoud zijn/haar lucifers, de verliezende speler verliest 1 lucifer.Het spel gaat door tot dat 1 speler al zijn lucifers kwijt is, die speler verliest het spel. 
+
+opties_1 = [0, 1, 2, 3]
+opties_2 = [0, 1, 2, 3]
+message = {
+  "Speler 1 wint ronde" = "Speler 1 heeft deze ronde gewonnen!",
+  "Speler 2 wint ronde" = "Speler 2 heeft deze ronde gewonnen!",
+  "Speler 1 wint spel" = "Speler 1 heeft het spel gewonnen!",
+  "Speler 2 wint spel" = "Speler 2 heeft het spel gewonnen!",
+  "Hetzelfde_antwoord" = "Je kan niet hetzelfde antwoord geven, geef een andere waarde"
+  "Beide fout" = "Beide fout, raad nogmaals" 
+}
+def totaal_lucifers(Hand1, Hand2):
+  Hand1 = raw_input("Speler 1 geef aantal in hand: ")
+  Hand2 = raw_input("Speler 2 geef aantal in hand: ")
+  Win_totaal = Hand1 + Hand2
+  
+def bepaal_winnaar_ronde1(speler1_keuze, speler2_keuze):
+  print "Speler 1 heeft deze waarde: %s" % speler1_keuze
+  print "Speler 2 heeft deze waarde: %s" % speler2_keuze
+  if speler1_keuze == speler2_keuze:
+    print message ["Hetzelfde_antwoord"]
+  elif speler1_keuze == Win_totaal
+    print message ["Speler 1 wint ronde"] and opties2.remove(3)
+  elif speler2_keuze == Win_totaal 
+    print message ["Speler 2 wint ronde"] and opties1.remove(3)
+  elif speler1_keuze and speler2_keuze != Win_totaal
+    print message ["Beide fout"]
+    Win_totaal = (Hand1 + Hand2) - 1
+                   
+def bepaal_winnaar_ronde2(speler1_keuze, speler2_keuze):
+  print "Speler 1 heeft deze waarde: %s" % speler1_keuze
+  print "Speler 2 heeft deze waarde: %s" % speler2_keuze
+  if speler1_keuze == speler2_keuze:
+    print message ["Hetzelfde_antwoord"]
+  elif speler1_keuze == Win_totaal
+    print message ["Speler 1 wint ronde"]
+    if opties2 == [0, 1, 2, 3]: 
+    opties2.remove(3)
+    elif opties2 == [0, 1, 2]:
+    opties2.remove(2)
+  elif speler2_keuze == Win_totaal
+    print message ["Speler 2 wint ronde""]
+    if opties1 == [0, 1, 2, 3]: 
+    opties1.remove(3)
+    elif opties1 == [0, 1, 2]:
+    opties1.remove(2)
+  elif speler1_keuze and speler2_keuze != Win_totaal
+    print message ["Beide fout"]
+    Win_totaal = (Hand1 + Hand2) - 2
+                   
+def bepaal_winnaar_ronde3(speler1_keuze, speler2_keuze):
+  print "Speler 1 heeft deze waarde: %s" % speler1_keuze
+  print "Speler 2 heeft deze waarde: %s" % speler2_keuze
+  if speler1_keuze == speler2_keuze:
+    print message ["Hetzelfde_antwoord"]
+  elif speler1_keuze == Win_totaal
+    print message ["Speler 1 wint ronde"]
+    if opties2 == [0, 1, 2, 3]: 
+    opties2.remove(3)
+    elif opties2 == [0, 1, 2]:
+    opties2.remove(2)
+    elif opties2 == [0,1]:
+    print "Speler 1 wint spel"
+    break
+  elif speler2_keuze == Win_totaal
+    print message ["Speler 2 wint ronde""]
+    if opties1 == [0, 1, 2, 3]: 
+    opties1.remove(3)
+    elif opties1 == [0, 1, 2]:
+    opties1.remove(2)
+    elif opties1 == [0,1]:
+    print "Speler 2 wint spel"
+    break
+  elif speler1_keuze and speler2_keuze != Win_totaal
+    print message ["Beide fout"]
+    Win_totaal = (Hand1 + Hand2) - 3
+
+def Ronde_4 = for x in bepaal_winnaar_ronde3:
+    Win_totaal (Hand1 + Hand2) - 4
+
+def Ronde_5 = for x in bepaal_winnaar_ronde3:
+    Win_totaal (Hand1 + Hand2) - 5
+
+def speel_bamzaaien():
+  speler1_keuze = raw_input("Speler 1 geef een totale waarde: ")
+  speler2_keuze = raw_input("Speler 2 geef een totale waarde: ")
+  bepaal_winnaar(speler1_keuze, speler2_keuze)
+speel_bamzaaien()
